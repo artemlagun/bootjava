@@ -1,5 +1,5 @@
 #  https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
-spring.jpa.defer-datasource-initialization: true
+#spring.jpa.defer-datasource-initialization: true
 spring:
   jpa:
     show-sql: true

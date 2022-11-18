@@ -9,17 +9,11 @@ import ru.javaops.bootjava.repository.UserRepository;
 
 @SpringBootApplication
 @AllArgsConstructor
-public class BootJavaApplication implements ApplicationRunner {
+public class BootJavaApplication {
 
     private final UserRepository userRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(BootJavaApplication.class, args);
-    }
-
-    @Override
-    public void run(ApplicationArguments args) throws Exception {
-        System.out.println(userRepository.findAll());
-        System.out.println(userRepository.findByLastNameContainingIgnoreCase("last"));
     }
 }
