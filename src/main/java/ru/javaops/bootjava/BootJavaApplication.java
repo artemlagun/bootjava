@@ -8,10 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import ru.javaops.bootjava.repository.UserRepository;
 
 @SpringBootApplication
-@AllArgsConstructor
 public class BootJavaApplication {
-
-    private final UserRepository userRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(BootJavaApplication.class, args);
